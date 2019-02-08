@@ -5,7 +5,7 @@
  */
 
 plugins {
-    id("org.jetbrains.kotlin.konan") version("1.3.20")
+    id("org.jetbrains.kotlin.konan").version("1.3.20")
 }
 
 konanArtifacts {
