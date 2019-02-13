@@ -30,3 +30,6 @@ build
 # IntelliJ
 *.iml
 .idea/
+
+# Ignore META-INF
+META-INF/
