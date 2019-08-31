@@ -5,9 +5,19 @@
  */
 
 plugins {
-    id("org.jetbrains.kotlin.konan").version("1.3.20")
+  kotlin("multiplatform") version "1.3.50"
 }
 
-konanArtifacts {
-    program("hello_script")
+repositories {
+  mavenCentral()
+}
+
+kotlin {
+  macosX64("macos") {
+    binaries {
+      executable {
+        entryPoint("script.main")
+      }
+    }
+  }
 }

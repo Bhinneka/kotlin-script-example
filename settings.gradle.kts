@@ -8,4 +8,3 @@
  */
 
 rootProject.name = "kotlin-script-example"
-enableFeaturePreview("GRADLE_METADATA")
