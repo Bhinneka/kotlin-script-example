@@ -24,11 +24,14 @@ Learning how to create a simple (native) executable script using Kotlin
   ```
 
 * Then run the `.kexe` extension from your console using the following command;
-  ```kotlin;
-  ./your_konan_path/your_program.kexe
-  ```
 
-* Sample build native compiler in Mac OSX environment;
+    ##### Debug
   ```kotlin;
-  ./build/konan/bin/macos_x64/your_program.kexe
+  ./gradlew runDebugExecutableMacos
   ```
+  ##### Release
+    ```kotlin;
+    ./gradlew runReleaseExecutableMacos
+    ```
+
+* For other operating system, please change the `suffix` instead :smile:
